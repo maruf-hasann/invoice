@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      P {
+        margin: 0;
+        padding: 0px;
+      }
+      table,
+      thead,
+      tbody {
+        margin: 0;
+        padding: 0;
+      }
+
+      th {
+        text-align: left;
+      }
+      tr,
+      td,
+      th {
+        padding: 12px;
+        border-bottom: 1px solid #e5e7eb;
+        border-collapse: collapse;
+      }
+      #term {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #signature {
+        margin: 0;
+        margin-top: 0rem;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/4815f7ae9d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="font-family: 'Montserrat', sans-serif">
+    <main
+      style="
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        height: 100vh;
+        padding: 0rem 12px;
+      "
+    >
+      <!-- Top -->
+      <div>
+        <!-- Logo And Invoice Text Start -->
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+          "
+        >
+          <h3>LOGO</h3>
+          <h1
+            id="text"
+            style="
+              font-size: 2.3rem;
+              color: #5465ff;
+              font-weight: 900;
+              border-bottom: 2px solid #fbc02d;
+            "
+          >
+            INVOICE
+          </h1>
+        </div>
+        <!-- Logo And Text Start  END-->
+
+        <!-- Invoice To Info Start -->
+        <div style="display: flex; justify-content: space-between">
+          <!-- Customer Info -->
+          <div id="invoice-info">
+            <h2
+              style="
+                font-weight: 600;
+                font-size: 26px;
+                color: #5465ff;
+                margin-bottom: 8px;
+              "
+            >
+              Invoice to :
+            </h2>
+            <h3 style="font-weight: 600; font-size: 1rem">
+              Name : Afnaf Mafee
+            </h3>
+            <h3 style="font-weight: 600; font-size: 1rem; margin: 4px 0px">
+              Phone : +88016124141
+            </h3>
+            <h3 style="font-weight: 600; font-size: 1rem">
+              Email : mafee@gmail.com
+            </h3>
+          </div>
+          <!-- Invoice Info -->
+          <div id="invoice-date">
+            <h3 style="font-weight: 600; font-size: 1rem; margin-bottom: 4px">
+              Invoice No : #25222
+            </h3>
+            <h3 style="font-weight: 600; font-size: 1rem">Date : 2 jun 2023</h3>
+          </div>
+        </div>
+        <!-- Invoice To Info End -->
+      </div>
+
+      <!-- Top ENd-->
+
+      <!-- Invoice Table Start -->
+      <table width="100%" style="margin-top: 28px">
+        <thead>
+          <tr>
+            <th>NO.</th>
+            <th>ITEMS</th>
+            <th>PRICE</th>
+            <th>QTY.</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Apple iPhone 14 Pro 128GB Gold</td>
+            <td>$154010</td>
+            <td>3</td>
+            <td>$462030</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td ></td>
+            <td ></td>
+            <td style=" font-weight: 700">Total</td>
+            <td style=" font-weight: bold; text-align: end">
+              $96.99
+            </td>
+          </tr>
+         
+        </tfoot>
+      </table>
+
+      <!-- Invoice Table END -->
+
+      <!-- Footer -->
+      <div style="position: absolute; bottom: 0; left: 0; right: 0">
+        <div id="term">
+          <!--  -->
+          <div>
+            <h2 style="font-size: 15px; font-weight: 700; margin-bottom: 8px">
+              Thank you for business with us.
+            </h2>
+            <h3 style="font-size: 14px; font-weight: 600; margin-bottom: 4px">
+              Terms & Conditions
+            </h3>
+            <p style="font-size: 12px;">
+              Definitions. In these Standard Purchase Terms,<br />
+              the following definitions apply
+            </p>
+          </div>
+          <!-- Authorized signature-->
+          <div style="width: 200px; text-align: center" id="signature">
+            <h2
+              style="
+                border-top: 1px solid #e5e7eb;
+                text-align: center;
+                padding-bottom: 4px;
+              "
+            ></h2>
+            <h2 style="font-weight: normal; font-size: .7rem">
+              Authorized signature
+            </h2>
+          </div>
+        </div>
+        <!-- Social Link -->
+
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-top: 1.5rem;
+            padding-bottom: 4px;
+          "
+        >
+          <!-- Phone -->
+          <div style="display: flex; align-items: center; gap: 8px">
+            <div
+              style="
+                padding: 8px;
+                border-radius: 8px;
+                background: #fbc02d;
+                display: inline-block;
+              "
+            >
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <h3 style="font-weight: 500; font-size: 13px">+882522523</h3>
+          </div>
+          <!-- Email -->
+          <div style="display: flex; align-items: center; gap: 8px">
+            <div
+              style="
+                padding: 8px;
+                border-radius: 8px;
+                background: #fbc02d;
+                display: inline-block;
+              "
+            >
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <h3 style="font-weight: 500; font-size: 13px">
+              maxecom@contact.com
+            </h3>
+          </div>
+          <!-- Link -->
+          <div style="display: flex; align-items: center; gap: 8px">
+            <div
+              style="
+                padding: 8px;
+                border-radius: 8px;
+                background: #fbc02d;
+                display: inline-block;
+              "
+            >
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <h3 style="font-weight: 500; font-size: 13px">www.maxecom.com</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Footer  END-->
+    </main>
+  </body>
+</html>
